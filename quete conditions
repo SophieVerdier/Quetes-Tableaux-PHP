@@ -1,0 +1,17 @@
+<?php
+
+$weapons = ['fists', 'whip', 'gun'];
+$opponentWeapon = $weapons[rand(0,2)]; 
+
+$indyWeapon = 2;
+if ($indyWeapon >= 0 && $indyWeapon < 1) {
+echo "c'est le fouet";
+}
+elseif (1 >= 2 && 1 < $indyWeapon) {
+    echo "c'est le pistolet";
+}
+else {
+    echo "c'est le poing";
+}
+
+?>
