@@ -1,17 +1,23 @@
 <?php
 
 $weapons = ['fists', 'whip', 'gun'];
-$opponentWeapon = $weapons[rand(0,2)]; 
+$opponentWeapon = $weapons[rand(0,2)]; // Cela permet de choisir une arme de manière aléatoire.
 
-$indyWeapon = 2;
-if ($indyWeapon >= 0 && $indyWeapon < 1) {
-echo "c'est le fouet";
+$indyWeapon = "";
+
+switch ($opponentWeapon) {
+  case 'fists':
+    $indyWeapon = 'Indy prend son pistolet';
+    break;
+  case 'whip':
+    $indyWeapon = 'Indy utilise ses poings';
+    break;
+  case 'gun':
+    $indyWeapon = 'Indy prend son fouet';
+    break;
 }
-elseif (1 >= 2 && 1 < $indyWeapon) {
-    echo "c'est le pistolet";
-}
-else {
-    echo "c'est le poing";
-}
+
+echo "L'adversaire attaque Indy avec ".$opponentWeapon.PHP_EOL;
+echo $indyWeapon.PHP_EOL;
 
 ?>
