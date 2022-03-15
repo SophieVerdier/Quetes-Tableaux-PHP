@@ -1,0 +1,9 @@
+<?php
+
+function whiteSecretSentence($animal = "chat", $element ="feu")
+{
+return "le ".$animal ." s'incline devant le ". $element;
+}
+echo whiteSecretSentence();
+
+?>
